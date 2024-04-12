@@ -1,11 +1,9 @@
 html{
     margin: 2;
-    padding: 5;
+    padding: 3;
     background-color: gray;
 }
 Body{
-
-    padding: 5;
     background-color: bisque;
 }
 .home{
