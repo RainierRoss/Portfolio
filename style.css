@@ -1,25 +1,25 @@
 html{
-    margin: 0;
+    margin: 2;
     padding: 5;
     background-color: gray;
 }
 Body{
-    margin: 0;
+
     padding: 5;
     background-color: bisque;
 }
 .home{
-    margin: 0;
+
     padding: 2;
     background-color: aliceblue;
 }
 .about{
-    margin: 0;
+
     padding: 2;
     background-color: aliceblue;
 }
 .showcase{
-    margin: 0;
+
     padding: 2;
     background-color: aliceblue;
 }
