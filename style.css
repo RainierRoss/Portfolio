@@ -4,6 +4,7 @@ html{
     background-color: gray;
 }
 Body{
+    margin: 2;
     padding: 4;
     background-color: bisque;
 }
