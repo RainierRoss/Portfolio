@@ -3,35 +3,17 @@ html{
     padding: 0;
     background-color: gray;
 }
-Body{
-    background-color: bisque;
-}
-.home{
-    padding: 2;
-    background-color: aliceblue;
-}
-.about{
-    padding: 2;
-    background-color: aliceblue;
-}
-.showcase{
-    padding: 2;
-    background-color: aliceblue;
-}
-/* --- Grid 30-70 --- */
-.grid30-70 {
+.gridFractions {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
     grid-gap: 1em;
+    justify-items: stretch;
+    align-items: stretch;
 }
-.grid30-70 > div{
+.gridFractions > div{
     background-color: aquamarine;
     border: #000 1px solid;
     padding: 1em;
-}
-.gridFractions {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr 2fr);
-    grid-gap: 1em;
 }
 
