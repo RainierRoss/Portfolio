@@ -1,23 +1,9 @@
-html{
-    margin: 2;
-    padding: 3;
-    background-color: gray;
+html {
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
 }
-Body{
-    background-color: bisque;
-}
-.home{
-    padding: 2;
-    background-color: aliceblue;
-}
-.about{
-    padding: 2;
-    background-color: aliceblue;
-}
-.showcase{
-    padding: 2;
-    background-color: aliceblue;
-}
+
 .gridFractions {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -31,4 +17,3 @@ Body{
     border: #000 1px solid;
     padding: 1em;
 }
-
