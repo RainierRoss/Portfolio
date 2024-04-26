@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    background-color: aqua;
+    flex-wrap:  wrap;
+    width: 100vw;
+    height: 300px;
+
+    flex-direction: row;
+    /* align-items: flex-end; */
+}
+
+.box {
+    background-color: crimson;
+    margin: 10px;
+    width: 100px;
+}
+
+.box1{
+    
+    background-color: blue;
+    order: 2;
+    align-self: self-end;
+}
+.box2{
+    /* flex: 1; */
+    background-color: purple;
+    order: 3;
+    align-self: center;
+}
+.box3{
+    background-color: green;
+    order: 1;
+    align-self: self-start;
+}
+
