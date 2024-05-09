@@ -1,33 +1,171 @@
 html {
-    margin: 0;
-    padding: 0;
-    background-color: blueviolet;
+    font-size: 55.2%;
+    
+}
+.layout{
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.gridFractions {
+/* === Nav === */
+header{
+    grid-row: 1/3;
+}
+.searchBar{
+    float: left;
+    display: block;
+    color: black;
+    text-align: left;
+    padding:14px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 8px;
+    margin-top: 30px;
+}
+
+.outerlogo {
+    grid-column: 2;
+    grid-row: 1/3;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    /*mouse over */
+}
+
+.logo i {
+    font-size: 4rem;
+    color: transparent;
+    margin-right:-6rem;
+    margin-bottom:-1rem;
+    
+}
+
+/* pushes the text in the logo to 2 rows - remove if you want on 1 line. */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+} 
+
+/*targets upper text -- name -- 1st one*/
+.logo-text span:nth-child(1) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: white;
+
+}
+
+/*targets second text in the logo */
+.logo-text span:nth-child(2) {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin-top: -0.7rem;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* includes padding, borders, etc. in size */
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /* removes underline from links*/
+}
+
+/*reduces the default size from 16px to 10px 
+makes 1rem - 10pixels */
+
+/* End of Default Styles */
+
+/* Container */
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #b8afaf;
+}
+
+.navbar {
+    width: 100%;
+    height: 10rem;
+    background-color: #202020;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    /*appears on top of everything else */
+}
+
+.menu-icon {
+    width: 4rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 50%;
+    right: 8rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    
+}
+
+.line {
+    width: 4rem;
+    height: .2rem;
+    background-color: #ccc;
+}
+
+.navigation {
+    width: 100%;
+    height: 10vh;
+    background-color: #0b0b14;
+    position: absolute;
+    top: -100vh;
+    /* makes navigation come down from top*/
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 1em;
-    justify-items: stretch;
-    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* 2 columns */
+    grid-auto-rows: 90% 10%;
+    /* 2 rows for full screen */
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    /* z-index: 50; */
 }
-.gridFractions > div{
-    background-color: aquamarine;
-    border: #000 1px solid;
-    padding: 1em;
+.a{
+    margin:10;
 }
-.box1{
-    grid-column: 0.25f/0.5f;
-    grid-row: 1/2;
+
+.change .navigation {
+    top:88;
 }
-.box2{
-    grid-row: 2/8;
+
+.navigation a {
+    font-family: cursive;
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    justify-self: center;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 1rem;
 }
-.box3{
-    grid-column: 1/3;
-    grid-row: 4/5;
+
+/*shows the navigation on click */
+.change .navigation a {
+    opacity: 3;
+    visibility: visible;
 }
-.box4{
-    grid-row: 1/4;
-}
+
+/* === Nav === */
+/* === Header === */
